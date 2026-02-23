@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Motion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Motion</div>
+
+    <nav class="nav-links">
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Support</a>
+        <button class="login-btn">Login</button>
+    </nav>
+
+    <div class="menu-toggle">&#9776;</div>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Build something beautiful.</h1>
+        <p>
+            Motion helps you and your team turn ideas into reality faster,
+            smarter, and beautifully.
+        </p>
+
+        <div class="buttons">
+            <button class="primary">Get Started</button>
+            <button class="secondary">Learn More</button>
+        </div>
+    </div>
+
+    <div class="hero-visual">
+        <div class="card"></div>
+        <div class="circle one"></div>
+        <div class="circle two"></div>
+    </div>
+</section>
+
+<script>
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav-links");
+
+    toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+    });
+</script>
+
+</body>
+</html>
